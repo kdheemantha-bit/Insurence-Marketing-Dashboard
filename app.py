@@ -25,7 +25,7 @@ st.set_page_config(
 # ---------- Load data ----------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("insurance_data_aggregated.csv")
+    df = pd.read_csv("insurance.data.aggregated.csv")
     df.columns = [c.strip() for c in df.columns]
     return df
 
